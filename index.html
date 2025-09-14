@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Technical Skills – Tailwind Example</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <!-- ================= Hero Section ================= -->
+    <header class="relative overflow-hidden bg-white">
+      <!-- Big yellow arc background -->
+      <div class="pointer-events-none absolute inset-0">
+        <div
+          class="absolute -left-[45rem] top-1/2 -translate-y-1/2 h-[160vh] w-[160vh] rounded-full bg-amber-400"
+        ></div>
+      </div>
+
+      <!-- Top-right nav -->
+      <nav class="relative z-20 flex justify-end p-6">
+        <ul
+          class="flex items-center gap-1 rounded-full border border-slate-300 bg-white/80 px-3 py-1 shadow-sm backdrop-blur"
+        >
+          <li>
+            <a href="#about" class="rounded-full px-4 py-2 hover:bg-slate-100"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="rounded-full px-4 py-2 hover:bg-slate-100"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="rounded-full px-4 py-2 hover:bg-slate-100"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="rounded-full px-4 py-2 hover:bg-slate-100"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="rounded-full px-4 py-2 hover:bg-slate-100"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero content -->
+      <div class="relative z-10 mx-auto max-w-7xl px-6 pb-10 pt-6 md:pt-16">
+        <div class="grid items-center gap-8 md:grid-cols-2">
+          <!-- Left copy -->
+          <div class="py-8 md:py-16">
+            <div class="relative">
+              <div class="absolute -top-6 left-0 h-0.5 w-24 bg-black"></div>
+              <h1
+                class="border-l-4 border-black pl-6 text-4xl font-extrabold leading-[1.05] md:text-6xl"
+              >
+                Suvitcha<br />Pornsereekul
+              </h1>
+            </div>
+            <p class="mt-4 text-xl font-semibold text-slate-700">
+              Software Developer
+            </p>
+            <p class="mt-6 max-w-xl text-lg text-slate-700">
+              Junior Frontend Developer passionate about building accessible,
+              performant web apps. Currently seeking a role in React/Next.js
+              where I can contribute to delightful user experiences.
+            </p>
+          </div>
+          <!-- Right photo -->
+          <div
+            class="relative flex justify-center px-8 md:justify-end md:px-12"
+          >
+            <img
+              src="https://placehold.co/600x800/png"
+              alt="Profile photo"
+              class="relative z-10 h-[380px] w-auto object-contain drop-shadow-xl md:h-[520px]"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =============== End Hero Section =============== -->
+    <main
+      id="skills"
+      class="scroll-mt-28 md:scroll-mt-40 mx-auto max-w-6xl px-6 py-12"
+    >
+      <!-- Title -->
+      <h1 class="text-2xl md:text-3xl font-bold text-center tracking-tight">
+        Technical Skills
+      </h1>
+
+      <!-- Section: Programming Languages -->
+      <section class="mt-10">
+        <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+          Programming Languages
+        </h2>
+        <ul
+          class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- HTML5 -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="HTML5 logo"
+              src="https://cdn.simpleicons.org/html5/E34F26"
+            />
+            <span class="text-sm uppercase tracking-wider">HTML5</span>
+          </li>
+          <!-- CSS3 -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="CSS3 logo"
+              src="https://cdn.simpleicons.org/css3/1572B6"
+            />
+            <span class="text-sm uppercase tracking-wider">CSS3</span>
+          </li>
+          <!-- JavaScript -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="JavaScript logo"
+              src="https://cdn.simpleicons.org/javascript/F7DF1E"
+            />
+            <span class="text-sm uppercase tracking-wider">JAVASCRIPT</span>
+          </li>
+          <!-- C++ -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="C++ logo"
+              src="https://cdn.simpleicons.org/cplusplus/00599C"
+            />
+            <span class="text-sm uppercase tracking-wider">C++</span>
+          </li>
+          <!-- C -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="C logo"
+              src="https://cdn.simpleicons.org/c/A8B9CC"
+            />
+            <span class="text-sm uppercase tracking-wider">C</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section: Frameworks & Libraries -->
+      <section class="mt-12">
+        <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+          Frameworks &amp; Libraries
+        </h2>
+        <ul
+          class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- React -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="React logo"
+              src="https://cdn.simpleicons.org/react/61DAFB"
+            />
+            <span class="text-sm uppercase tracking-wider">REACT</span>
+          </li>
+          <!-- Node.js -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="Node.js logo"
+              src="https://cdn.simpleicons.org/nodedotjs/339933"
+            />
+            <span class="text-sm uppercase tracking-wider">NODEJS</span>
+          </li>
+          <!-- Tailwind CSS -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="Tailwind CSS logo"
+              src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+            />
+            <span class="text-sm uppercase tracking-wider">TailwindCSS</span>
+          </li>
+          <!-- CodeIgniter -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="CodeIgniter logo"
+              src="https://cdn.simpleicons.org/codeigniter/EF4223"
+            />
+            <span class="text-sm uppercase tracking-wider">CodeIgniter</span>
+          </li>
+          <!-- WordPress -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="WordPress logo"
+              src="https://cdn.simpleicons.org/wordpress/21759B"
+            />
+            <span class="text-sm uppercase tracking-wider">WordPress</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section: Databases -->
+      <section class="mt-12">
+        <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+          Databases
+        </h2>
+        <ul
+          class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- MySQL -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="MySQL logo"
+              src="https://cdn.simpleicons.org/mysql/4479A1"
+            />
+            <span class="text-sm uppercase tracking-wider">MySQL</span>
+          </li>
+          <!-- MongoDB -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="MongoDB logo"
+              src="https://cdn.simpleicons.org/mongodb/47A248"
+            />
+            <span class="text-sm uppercase tracking-wider">mongoDB</span>
+          </li>
+          <!-- PostgreSQL -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="PostgreSQL logo"
+              src="https://cdn.simpleicons.org/postgresql/4169E1"
+            />
+            <span class="text-sm uppercase tracking-wider">PostgreSQL</span>
+          </li>
+        </ul>
+      </section>
+      <!-- Section: Design Tools -->
+      <section class="mt-12">
+        <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+          Design Tools
+        </h2>
+        <ul
+          class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- Figma -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="Figma logo"
+              src="https://cdn.simpleicons.org/figma/F24E1E"
+            />
+            <span class="text-sm uppercase tracking-wider">Figma</span>
+          </li>
+          <!-- Photoshop -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="Adobe Photoshop logo"
+              src="https://cdn.simpleicons.org/adobephotoshop/31A8FF"
+            />
+            <span class="text-sm uppercase tracking-wider">Photoshop</span>
+          </li>
+          <!-- Illustrator -->
+          <li class="flex flex-col items-center gap-3">
+            <img
+              class="h-16 w-16 md:h-20 md:w-20"
+              alt="Adobe Illustrator logo"
+              src="https://cdn.simpleicons.org/adobeillustrator/FF9A00"
+            />
+            <span class="text-sm uppercase tracking-wider">Illustrator</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================= Experience ================= -->
+      <section id="experience" class="scroll-mt-28 md:scroll-mt-40 mt-16">
+        <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+          Experience
+        </h2>
+
+        <ol class="mt-6 relative border-l-2 border-slate-200 pl-6 space-y-10">
+          <!-- Generation Thailand Bootcamp -->
+          <li class="relative">
+            <span
+              class="absolute -left-3 top-1.5 h-2.5 w-2.5 rounded-full bg-amber-500 ring-4 ring-amber-100"
+            ></span>
+            <div class="flex flex-col md:flex-row md:items-start md:gap-6">
+              <div class="min-w-[16rem] md:w-1/3">
+                <h3 class="font-semibold">
+                  Junior Software Developer — Generation Thailand Bootcamp
+                </h3>
+              </div>
+              <ul
+                class="mt-3 md:mt-0 list-disc pl-5 space-y-2 text-slate-700 md:w-2/3"
+              >
+                <li>
+                  Built a full‑stack e‑commerce application using React,
+                  Express.js, and MongoDB.
+                </li>
+                <li>
+                  Collaborated in a team of 5 under Agile/Scrum with Git/GitHub
+                  workflow.
+                </li>
+                <li>
+                  Strengthened skills in RESTful API design and responsive UI
+                  with TailwindCSS.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Online Sales -->
+          <li class="relative">
+            <span
+              class="absolute -left-3 top-1.5 h-2.5 w-2.5 rounded-full bg-amber-500 ring-4 ring-amber-100"
+            ></span>
+            <div class="flex flex-col md:flex-row md:items-start md:gap-6">
+              <div class="min-w-[16rem] md:w-1/3">
+                <h3 class="font-semibold">Online Sales — Lazada & Shopee</h3>
+                <p class="text-sm text-slate-600">
+                  Self‑employed | 2020 – Present
+                </p>
+              </div>
+              <ul
+                class="mt-3 md:mt-0 list-disc pl-5 space-y-2 text-slate-700 md:w-2/3"
+              >
+                <li>
+                  Managed product listings, order processing, inventory control,
+                  and shipping coordination.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- N.I.V. Kitchenware -->
+          <li class="relative">
+            <span
+              class="absolute -left-3 top-1.5 h-2.5 w-2.5 rounded-full bg-amber-500 ring-4 ring-amber-100"
+            ></span>
+            <div class="flex flex-col md:flex-row md:items-start md:gap-6">
+              <div class="min-w-[16rem] md:w-1/3">
+                <h3 class="font-semibold uppercase">
+                  N.I.V. Kitchenware Company Limited
+                </h3>
+                <p class="text-sm text-slate-600">
+                  WordPress Developer & Website Administrator | 2019 – 2020
+                </p>
+              </div>
+              <ul
+                class="mt-3 md:mt-0 list-disc pl-5 space-y-2 text-slate-700 md:w-2/3"
+              >
+                <li>
+                  Developed and maintained the company website using WordPress,
+                  customizing themes and plugins to match design specifications.
+                </li>
+                <li>
+                  Captured and edited product photos for marketing and online
+                  sales.
+                </li>
+                <li>
+                  Created and updated product listings (images, descriptions,
+                  prices) in the website’s CMS.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Bits & Atoms -->
+          <li class="relative">
+            <span
+              class="absolute -left-3 top-1.5 h-2.5 w-2.5 rounded-full bg-amber-500 ring-4 ring-amber-100"
+            ></span>
+            <div class="flex flex-col md:flex-row md:items-start md:gap-6">
+              <div class="min-w-[16rem] md:w-1/3">
+                <h3 class="font-semibold uppercase">
+                  Bits & Atoms Company Limited
+                </h3>
+                <p class="text-sm text-slate-600">
+                  API Mobile Developer | 2016 – 2017
+                </p>
+              </div>
+              <ul
+                class="mt-3 md:mt-0 list-disc pl-5 space-y-2 text-slate-700 md:w-2/3"
+              >
+                <li>
+                  Built RESTful APIs for mobile applications using CodeIgniter
+                  (MVC) and integrated with MySQL.
+                </li>
+                <li>
+                  Designed ER diagrams to structure MySQL databases for
+                  alignment with system requirements.
+                </li>
+                <li>
+                  Implemented push notifications to deliver alerts directly to
+                  iOS and Android devices.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <!-- =============== End Experience =============== -->
+
+      <!-- ================= Soft Skills ================= -->
+      <section
+        id="soft-skills"
+        class="scroll-mt-28 md:scroll-mt-40 mt-16 rounded-3xl bg-slate-50 p-6 md:p-10"
+      >
+        <div
+          class="mx-auto max-w-5xl rounded-2xl border border-slate-300 bg-white p-8 md:p-12 shadow-sm"
+        >
+          <h2 class="text-center text-2xl md:text-3xl font-bold">
+            Soft Skills
+          </h2>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-10">
+            <ul class="space-y-6 md:space-y-8 text-xl md:text-2xl">
+              <li>Communication</li>
+              <li>Time management</li>
+              <li>Attention to detail</li>
+            </ul>
+            <ul class="space-y-6 md:space-y-8 text-xl md:text-2xl">
+              <li>Problem-solving</li>
+              <li>Teamwork</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- =============== End Soft Skills =============== -->
+
+      <!-- ================= Portfolio ================= -->
+      <section id="portfolio" class="scroll-mt-28 md:scroll-mt-40 mt-16">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-lg md:text-xl font-semibold tracking-tight">
+            Portfolio
+          </h2>
+          <a
+            href="#"
+            class="text-sm inline-flex items-center gap-1 rounded-full border border-slate-300 px-3 py-1 hover:bg-slate-50"
+            >View all<span aria-hidden>→</span></a
+          >
+        </div>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/gadme/960/540"
+                alt="Gadme‑Ecommerce screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">Gadme‑Ecommerce (MERN)</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Product variants, cart merge on login, JWT auth, MongoDB Atlas.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">React</span>
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Express</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >MongoDB</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >TailwindCSS</span
+                >
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="text-slate-700 hover:underline"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/admin/960/540"
+                alt="Admin dashboard screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">React Admin Dashboard</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Charts, dark mode, protected routes, role‑based layout.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">React</span>
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Recharts</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">JWT</span>
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a href="#" class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a href="#" class="text-slate-700 hover:underline">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/nextfolio/960/540"
+                alt="Next.js portfolio screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">Next.js Portfolio</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Static generation, dynamic routes, optimized images.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Next.js</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Tailwind</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Vercel</span
+                >
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a href="#" class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a href="#" class="text-slate-700 hover:underline">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/ci-blog/960/540"
+                alt="CodeIgniter blog screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">CodeIgniter Blog CMS</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                CRUD posts, categories, auth, server‑rendered views.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">PHP</span>
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >CodeIgniter</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">MySQL</span>
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a href="#" class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a href="#" class="text-slate-700 hover:underline">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/landing/960/540"
+                alt="Landing page screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">Tailwind Product Landing</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Responsive layout, A11y‑friendly components, SEO basics.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Tailwind</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1">Vite</span>
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a href="#" class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a href="#" class="text-slate-700 hover:underline">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article
+            class="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md"
+          >
+            <div class="aspect-[16/9] bg-slate-100">
+              <img
+                src="https://picsum.photos/seed/api/960/540"
+                alt="REST API screenshot"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold">Node REST API Starter</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Express, JWT auth, MongoDB, error handler, tests.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2 text-xs">
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Node.js</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >Express</span
+                >
+                <span class="rounded-full bg-slate-100 px-2.5 py-1"
+                  >MongoDB</span
+                >
+              </div>
+              <div class="mt-4 flex gap-3 text-sm">
+                <a href="#" class="font-medium text-slate-900 hover:underline"
+                  >Live</a
+                >
+                <span class="text-slate-300">•</span>
+                <a href="#" class="text-slate-700 hover:underline">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- =============== End Portfolio =============== -->
+
+      <!-- ================= Contact Me ================= -->
+      <section id="contact" class="scroll-mt-28 md:scroll-mt-40 mt-16">
+        <div
+          class="mx-auto max-w-5xl rounded-2xl border border-slate-200 bg-white p-6 md:p-10 shadow-sm"
+        >
+          <h2 class="text-center text-2xl md:text-3xl font-bold">Contact Me</h2>
+          <p class="mt-3 text-center text-slate-600">
+            Open to Junior Frontend roles (React / Next.js). Feel free to reach
+            out!
+          </p>
+
+          <div class="mt-8 grid gap-8">
+            <!-- Form -->
+            <!-- Direct contacts -->
+            <div class="space-y-4">
+              <div>
+                <h3 class="text-base font-semibold">Direct</h3>
+                <ul class="mt-2 space-y-2 text-slate-700">
+                  <li>
+                    <span class="font-medium">Email:</span>
+                    <a class="hover:underline" href="mailto:you@example.com"
+                      >you@example.com</a
+                    >
+                  </li>
+                  <li>
+                    <span class="font-medium">Location:</span> Bangkok, Thailand
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-base font-semibold">Social</h3>
+                <ul class="mt-2 space-y-2 text-slate-700">
+                  <li>
+                    <span class="font-medium">GitHub:</span>
+                    <a class="hover:underline" href="#">github.com/yourname</a>
+                  </li>
+                  <li>
+                    <span class="font-medium">LinkedIn:</span>
+                    <a class="hover:underline" href="#"
+                      >linkedin.com/in/yourname</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== End Contact Me =============== -->
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer id="site-footer" class="mt-20 border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+        <p class="text-sm text-slate-600">
+          © 2025 Suvitcha Pornsereekul. All rights reserved.
+        </p>
+        <div class="flex items-center gap-4 text-sm text-slate-600">
+          <a href="mailto:you@example.com" class="hover:text-slate-900"
+            >you@example.com</a
+          >
+          <span class="text-slate-300">•</span>
+          <a href="#portfolio" class="hover:text-slate-900">Portfolio</a>
+          <span class="text-slate-300">•</span>
+          <a href="#" class="hover:text-slate-900">GitHub</a>
+          <span class="text-slate-300">•</span>
+          <a href="#" class="hover:text-slate-900">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <!-- =============== End Footer =============== -->
+
+    <script>
+      // Smooth scroll for in-page nav links (works even without CSS scroll-smooth)
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const id = link.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
